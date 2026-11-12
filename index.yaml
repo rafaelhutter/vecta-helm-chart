@@ -3,7 +3,29 @@ entries:
   tams:
   - apiVersion: v2
     appVersion: latest
-    created: "2026-10-16T16:25:06.434609+02:00"
+    created: "2026-11-12T14:00:47.171734+01:00"
+    dependencies:
+    - condition: rabbitmq.enabled
+      name: rabbitmq
+      repository: oci://registry-1.docker.io/cloudpirates
+      version: 0.2.12
+    description: Time-Addressable Media Store (MoovIT TAMS) – Helm Chart
+    digest: 706f8389557d501162407ba1dfefac08926b80da6e6ebcc389b0e99d8161ac37
+    home: https://github.com/rafaelhutter/vecta
+    keywords:
+    - tams
+    - media
+    - s3
+    maintainers:
+    - name: moovit
+    name: tams
+    type: application
+    urls:
+    - https://rafaelhutter.github.io/vecta-helm-chart/tams-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: latest
+    created: "2026-11-12T14:00:47.170133+01:00"
     dependencies:
     - condition: rabbitmq.enabled
       name: rabbitmq
@@ -23,4 +45,4 @@ entries:
     urls:
     - https://rafaelhutter.github.io/vecta-helm-chart/tams-0.1.0.tgz
     version: 0.1.0
-generated: "2026-10-16T16:25:06.433553+02:00"
+generated: "2026-11-12T14:00:47.168915+01:00"
